@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>External sheet</title>
+	<link rel="stylesheet" type="text/css" href="can.css">
+	<link rel="stylesheet" type="text/css" href="css/fontawesome.css">
+	<link rel="stylesheet" type="text/css" href="css/brands.css">
+	<meta name="viewport" content="width=device-width; initial=scale1.0"/>
+</head>
+<body>
+	<div class="social">
+		<i class="fab fa-facebook"></i>
+		<i class="fab fa-youtube"></i>
+		<i class="fab fa-twitter"></i>
+		<i class="fab fa-linkedin"></i>
+		<i class="fab fa-twitch"></i>
+	</div>
+<div class="container">
+	<div class="bannermenufix">
+
+	<div class="row">
+		<div class="col100 web banner">Banner</div>
+	</div>
+	<div class="row">
+		<div class="col100 menu">
+			
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Downloads</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+
+		</div>
+	</div>
+</div>
+<!--bannermenufix close-->
+<div class="scrollable">
+	<div class="row">
+		<div class="col50">
+		<script>
+        window.onload = choosePic;
+        var theAd = 0;
+        var myPix = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg"];
+        length=myPix.length;
+        function choosePic()
+        {
+        	var randomNum = Math.floor((Math.Random)* length);
+        	document.getElementById("myPicture").src= myPix[theAd];
+        	rotate();
+        }
+        function rotate()
+        {
+        	theAd++
+        	if(theAd==myPix.length)
+        	{
+        		theAd=0;
+        	}
+        	document.getElementById("myPicture").src=myPix[theAd];
+        	setTimeout(rotate,3 * 1000);
+        }
+	</script>
+	<img src="images/slider.jpg" width="340" height="320" id="myPicture" alt="some image">
+			<img src="slider.jpg" alt="slider" title="slider"></div>
+		<div class="col50 highlight">
+			<div class="row">
+				<h2>my heading goes here</h2>
+				<div class="col25">
+					<img src="highlight.jpg" alt="highlight" title="highlight">
+				</div>
+				<div class="col75">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+				</div>
+			</div>
+
+
+			<div class="clear"></div>
+			<div class="row">
+				<h2>my heading goes here</h2>
+				<div class="col25">
+					<img src="highlight.jpg" alt="highlight" title="highlight">
+				</div>
+				<div class="col75">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="row">
+				<h2>Heading </h2>
+				<div class="col25">
+					<img src="highlight.jpg" alt="highlight" title="highlight">
+				</div>
+				<div class="col75">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="row">
+		<div class="col25"><img src="col.jpg" alt="col" title="col"/></div>
+		<div class="col25"><img src="col.jpg" alt="col" title="col"/></div>
+		<div class="col25"><img src="col.jpg" alt="col" title="col"/></div>
+		<div class="col25"><img src="col.jpg" alt="col" title="col"/></div>
+	</div>
+
+	<div class="row">
+		<div class="col75"><img src="entertainment.jpg" alt="entertainment" title="entertainment"></div>
+		<div class="col25"><h1>HEADING</h1></div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<div class="clear"></div>
+	<div class="row">
+		<div class="col100">&copy; 2018,All right reserved</div>
+	</div>
+</div>
+</div>
+</body>
+</html>

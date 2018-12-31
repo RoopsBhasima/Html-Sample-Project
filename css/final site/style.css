@@ -1,0 +1,27 @@
+/* tag type selector */
+		body{
+			background-color: #cccccc;
+			margin:0px;
+			padding: 0px;
+
+		}
+
+		/*ID Selector */
+		#wrapper
+		{
+			width: 960px;
+			min-height: 1000px;
+			margin: auto auto;
+			background-color: #ffffff;
+			border-radius: 0px 50px 0px 50px;
+
+
+		}
+
+		/* class selector */
+		.myheading{
+          font-size: 20px;
+          font-weight: bloder;
+          font-variant: small-caps;
+
+		}
